@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+    <script src="../../js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css">
+    	#div1 td{
+    		border: 1px solid cornflowerblue;
+    		width:200px;
+    		height:30px;
+    	}
+   		.main{width:300px;height:200px;background:skyblue;margin:50px auto;border-radius:50px;padding:250px 250px;}
+    </style>
+</head>
+<body>
+<div class="main">
+	<table id="div1" style="border-spacing: auto; border-collapse: collapse;" >
+	 	<tr>
+	 		<th>账号</th>
+	 		<th>密码</th>
+	 	</tr>
+	</table>
+</div>
+<script>
+         $(function(){
+        $.ajax({
+            url:"http://localhost:8080/user/getAllUsers",
+            data:{
+            },
+            success:function(data){
+                for(var i=0;i<data.length;i++){
+                    var trOb=$("<tr><td>"+data[i].Name+"</td><td>"+data[i].password+"</td></tr>");
+                    $("#div1").append(trOb);
+                }
+            },
+            dataType:"json"
+        });
+       
+    });
+        
+    
+</script>
+
+</body>
+</html>

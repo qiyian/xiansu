@@ -1,0 +1,983 @@
+
+.red {
+	color: #f70
+}
+.blue {
+	color: #39f
+}
+.blue:hover {
+	color: #39f
+}
+.green {
+	color: #298808
+}
+.pink, a.pink, a.pink:hover {
+	color: #f70
+}
+.gray, a.gray, a.gray:hover {
+	color: #999
+}
+.vip-ico, .svip-ico {
+	background: url("../images/vip-ico.png") 0 6px no-repeat
+}
+.svip-ico {
+	background-position: 0 -18px
+}
+#main {
+	width: 1008px;
+	margin: 30px auto 50px
+}
+#header {
+	width: 100%
+}
+#header .hd_bar {
+	background-color: #222;
+	height: 57px
+}
+.hd_bar .bd {
+	padding-left: 182px;
+	width: 826px;
+	height: 57px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 100
+}
+.hd_bar .hd_lbar {
+	float: left;
+	width: 310px;
+	overflow: hidden;
+	padding-left: 6px;
+	display: none
+}
+.hd_bar .hd_lbar a {
+	display: inline-block;
+	height: 17px;
+	line-height: 17px;
+	color: #eee;
+	padding: 20px 12px;
+	background-color: #222;
+	vertical-align: top
+}
+.hd_bar .hd_lbar a:hover {
+	background-color: #666;
+	color: #fff;
+	text-decoration: none
+}
+.hd_bar .hd_lbar .icon-user {
+	margin-right: 5px;
+	color: #999;
+	vertical-align: top
+}
+.hd_bar .hd_lbar .icon-lock {
+	margin-right: 5px;
+	color: #999;
+	vertical-align: top
+}
+.hd_bar .level {
+	font-family: \5b8b\4f53;
+	color: #bf001a;
+	margin-left: 5px;
+	font-size: 12px
+}
+.hd_bar .hd_rbar {
+	float: right;
+	width: 300px;
+	color: #eee;
+	text-align: right
+}
+.hd_bar .hd_rbar a {
+	display: inline-block;
+	height: 57px;
+	line-height: 57px;
+	color: #eee;
+	padding: 0 12px;
+	background-color: #222
+}
+.hd_bar .hd_rbar a:hover {
+	background-color: #444;
+	color: #fff;
+	text-decoration: none
+}
+#header .logo {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+#header .logo a {
+	display: block;
+	width: 182px;
+	height: 57px;
+	padding-top: 68px;
+	overflow: hidden;
+	background:url("../images/flow_logo.png") center 0 no-repeat;
+	background-size: 182px 57px;
+}
+.hd-step {
+	float: right;
+	width: 484px;
+	padding-top: 18px
+}
+.hd-step li {
+	float: left;
+	width: 116px;
+	height: 28px;
+	color: #bbb;
+	background: url("../images/page-step-bg.png") 0 0 no-repeat;
+	font-size: 14px;
+	position: relative
+}
+.hd-step li em {
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+	padding: 0 12px 0 8px;
+	font-family: arial;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+}
+.hd-step li i {
+	position: absolute;
+	top: 23px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-width: 8px;
+	border-style: solid;
+	border-color: #222 #222 #f8f8f8 #222;
+	display: none
+}
+.hd-step li.first {
+	width: 102px
+}
+.hd-step li.first em {
+	padding-left: 7px
+}
+.hd-step li.jt {
+	width: 72px;
+	background-position: center -141px
+}
+.hd-step li.on {
+	background-position: 0 -33px
+}
+.hd-step li.on i {
+	display: block
+}
+.hd_bar .hd_lbar a.usernav-link {
+	position: relative;
+	padding-right: 24px;
+	overflow: hidden
+}
+.hd_bar .hd_lbar a.usernav-link .arrow {
+	font-size: 16px;
+	color: #fafafa;
+	position: absolute;
+	top: 20px;
+	+top:15px;
+	right: 4px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s
+}
+.hd_bar .hd_lbar a.usernav-link img {
+	width: 1px;
+	height: 15px;
+	vertical-align: top
+}
+.hd_bar .hd_lbar a.usernav-link img.vip-ico {
+	background-position: 0 1px;
+	width: 18px
+}
+.hd_bar .hd_lbar a.usernav-link img.svip-ico {
+	background-position: 0 -23px;
+	width: 18px
+}
+.hd_bar .hd_lbar a.usernav-link i.arrow {
+	margin-right: 0
+}
+.hd_bar .hd_lbar a.usernav-link span {
+	display: inline-block;
+	height: 17px;
+	overflow: hidden;
+	vertical-align: top
+}
+.hd_bar .hd_lbar a.usernav-link span.ellips {
+	width: 148px
+}
+.hd_bar .hd_lbar a.hover {
+	background-color: #666;
+	color: #fff
+}
+.hd_bar .hd_lbar a.hover i.arrow {
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+.usernav-bd {
+	visibility: hidden;
+	opacity: 0;
+	width: 150px;
+	border: 1px solid #c9c9c9;
+	position: absolute;
+	z-index: 1100;
+	left: 0;
+	top: 72px;
+	background: #fafafa;
+	box-shadow: 0px 1px 5px rgba(100, 100, 100, 0.3);
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s
+}
+.usernav-show {
+	visibility: visible;
+	opacity: 1;
+	top: 62px
+}
+.usernav-bd a {
+	display: block;
+	height: 34px;
+	line-height: 34px;
+	margin: 0 10px;
+	border-bottom: 1px dashed #e5e5e5
+}
+.usernav-bd a:hover {
+	margin: 0;
+	background-color: #ddd;
+	border-bottom: 1px solid #ddd;
+	color: #333;
+	text-decoration: none;
+	padding-left: 10px
+}
+.usernav-bd a.last {
+	border-bottom: none
+}
+
+
+.tongji-js {
+	display: none
+}
+.btn, .btn-css3 {
+	display: inline-block;
+	padding: 5px 12px;
+	height: 16px;
+	line-height: 16px;
+	_line-height: 18px;
+	border: 1px solid #eb7207;
+	border-radius: 3px;
+	font-size: 100%;
+	color: #fff;
+	background-color: #f70;
+	overflow: hidden;
+	vertical-align: middle
+}
+.btn:hover, .btn-css3:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #f37100
+}
+.btn img, .btn-css3 img {
+	vertical-align: middle
+}
+.graybtn {
+	display: inline-block;
+	padding: 5px 12px;
+	height: 16px;
+	line-height: 16px;
+	border: 1px solid #c4c4c4;
+	border-radius: 2px;
+	font-size: 100%;
+	color: #666;
+	background-color: #efefef;
+	background-image: -webkit-linear-gradient(#f8f8f8, #e5e5e5);
+	background-image: -moz-linear-gradient(#f8f8f8, #e5e5e5);
+	background-image: linear-gradient(#f8f8f8, #e5e5e5);
+	background-repeat: repeat-x;
+	vertical-align: middle
+}
+.graybtn:hover {
+	text-decoration: none;
+	color: #666;
+	background: #e5e5e5;
+}
+.ok-tip, .success-tip, .warn-tip, .confirm-tip {
+	font-size: 14px
+}
+.ok-tip .iconfont, .success-tip .iconfont, .warn-tip .iconfont, .confirm-tip .iconfont {
+	color: #f60;
+	font-size: 24px;
+	margin-right: 10px
+}
+.ok-tip .iconfont {
+	color: #59bbec;
+	font-size: 30px
+}
+.success-tip {
+	font-size: 22px
+}
+.success-tip .iconfont {
+	color: #298808;
+	font-size: 26px
+}
+.confirm-tip .iconfont {
+	color: #0baee4;
+	font-size: 22px
+}
+.aui_inner table {
+	width: 100%
+}
+.aui_loading {
+	padding: 20px 0 0;
+	text-align: center;
+	overflow: hidden;
+	color: #bbb
+}
+.aui_inner {
+	background: #fafafa;
+	box-shadow: 1px 1px 3px rgba(100, 100, 100, 0.3);
+	border: 1px solid #989898
+}
+.aui_main {
+	vertical-align: top
+}
+.aui_content {
+	min-width: 200px
+}
+.aui_titleBar {
+	position: relative;
+	border-bottom: 1px solid #fff
+}
+.aui_titleBar .aui_title {
+	font-size: 20px;
+	padding: 10px 20px;
+	border-bottom: 1px solid #e0e0e0
+}
+.aui_close {
+	background-image: url("../images/ico.png");
+	background-position: 0 0;
+	top: 12px;
+	right: 12px;
+	position: absolute;
+	text-indent: -9999px;
+	width: 24px;
+	height: 24px;
+	overflow: hidden;
+	margin-right: 0
+}
+.aui_close:hover {
+	background-position: 0 -24px
+}
+.aui_buttons {
+	background-color: #F6F6F6;
+	border-top: 1px solid #eee;
+	padding: 6px 10px;
+	text-align: right
+}
+.aui_dialog button {
+	margin-left: 15px;
+	padding: 6px 8px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	line-height: 1;
+*padding:4px 6px;
+*height:2em;
+	letter-spacing: 2px;
+	color: #999;
+	border: solid 1px #ccc;
+	border-radius: 2px;
+	background: #eee
+}
+.aui_dialog button:hover {
+	background: #ddd
+}
+.aui_dialog button.highlight {
+	color: #fff;
+	border: solid 1px #38abe4;
+	background: #59bbec
+}
+.aui_dialog button.highlight:hover {
+	background: #7accf4
+}
+
+.dialog_success .aui_inner {
+	opacity: .9
+}
+.dialog_success .aui_close, .dialog_ok .aui_close, .dialog_confirm .aui_close, .dialog_warn .aui_close {
+	display: none
+}
+.dialog_login_box {
+	width: 320px;
+	height: 430px;
+	padding: 15px 30px;
+	background: #fff
+}
+.box-pic {
+	width: 600px;
+	height: 450px;
+	overflow: hidden;
+	float: left
+}
+.zixun-box {
+	position: absolute;
+	top: 48px;
+	right: 0;
+	width: 250px;
+	padding: 25px;
+	background-color: #f7f7f7;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	z-index: 999;
+	display: none
+}
+.zixun-box i.arw {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 112px;
+	top: -16px;
+	border: 8px dashed transparent;
+	border-bottom: 8px solid #f7f7f7
+}
+.zixun-box .closed {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	font-size: 16px
+}
+.zixun-box .closed:hover {
+	text-decoration: none
+}
+.zixun-box h5 {
+	font-size: 16px;
+	font-style: italic
+}
+.zixun-box p {
+	margin-top: 6px;
+	font-size: 14px
+}
+.zixun-box .zixun-qq {
+	padding: 20px 0
+}
+.zixun-box .zixun-qq a {
+	display: block;
+	width: 142px;
+	height: 42px;
+	background: url("../images/zixun-qq.png") 0 0 no-repeat
+}
+#login-box h2 {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 100;
+	letter-spacing: 5px
+}
+#login-box .trig {
+	float: right;
+	font-size: 12px;
+	letter-spacing: 0px
+}
+#login-box .trig a {
+	text-decoration: underline
+}
+.dialog_login_box .form-bd {
+	margin: 15px 0;
+	position: relative;
+	height: 239px;
+	width: 320px;
+	overflow: hidden
+}
+.dialog_login_box .form_box {
+	position: absolute;
+	width: 640px
+}
+.dialog_login_box .login_box, .prve_login {
+	float: left
+}
+.form-bd {
+	margin: 15px 0;
+	position: relative;
+	height: 289px;
+	width: 320px;
+	overflow: hidden;
+}
+#login-box .form {
+	width: 320px
+}
+#login-nala-form li h5 {
+	font-size: 14px;
+	color: #999
+}
+#login-nala-form li span.icon-user {
+	display: inline-block;
+	text-align: center;
+	color: #aaa;
+	font-size: 18px;
+	vertical-align: middle;
+	margin: 0 6px
+}
+#login-nala-form li span.icon-lock {
+	display: inline-block;
+	text-align: center;
+	color: #aaa;
+	font-size: 18px;
+	vertical-align: middle;
+	margin: 0 6px
+}
+#login-nala-form li input.text {
+	width: 240px;
+	padding: 4px 6px;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	border: none;
+	border-left: 1px solid #ccc;
+	color: #333;
+	vertical-align: middle;
+	color: #333;
+	margin-left: 2px;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	transition: all .25s ease
+}
+#login-nala-form li.text_input {
+	border: 1px solid #ccc;
+	line-height: 18px;
+	padding: 6px;
+	position: relative;
+	margin-bottom: 24px;
+	zoom: 1
+}
+#login-nala-form li {
+	line-height: 18px;
+	padding: 6px 0;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	transition: all .25s ease
+}
+#login-nala-form li.last {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 10px
+}
+#login-nala-form li.last p {
+	margin-bottom: 10px
+}
+#login-nala-form li.last .btn {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 5px;
+	cursor: pointer;
+	font-size: 18px;
+	border: none
+}
+#login-nala-form li.last .disabled {
+	background: #eee;
+	cursor: default;
+	color: #999
+}
+#login-nala-form li p .remember-me {
+	margin-right: 3px;
+	vertical-align: -2px
+}
+#login-nala-form li p a.forget_psd {
+	float: right;
+	text-decoration: underline
+}
+#login-nala-form li.params_error {
+	border-color: #fe655c
+}
+#login-nala-form li.params_error input.text {
+	border-left-color: #fe655c
+}
+#login-nala-form li.error_box {
+	padding: 0;
+	height: 16px;
+	margin-top: -12px;
+	margin-bottom: 5px;
+	color: #fe655c
+}
+#login-nala-form li.text_input .error_icon {
+	background: url("../images/error_icon.png") 0 -50px no-repeat;
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	right: 10px;
+	top: 10px
+}
+#login-nala-form li.params_error .error_icon {
+	background-position: 0 0
+}
+#login-nala-form li.text_input input:-webkit-autofill {
+-webkit-box-shadow:0 0 0px 1000px white inset
+}
+#login-nala-form ul li.input_box {
+	border: 1px solid #ccc;
+	line-height: 18px;
+	padding: 6px;
+	position: relative;
+	zoom: 1
+}
+#login-nala-form  ul li.security_code {
+width: 100px;
+*height:26px;
+}
+#login-nala-form ul li.input_box {
+line-height: 18px;
+zoom: 1;
+}
+#login-nala-form ul li.input_box .t_text {
+position: absolute;
+color: #ccc;
+left: 14px;
+top: 10px;
+}
+#login-nala-form ul li.input_box input {
+	
+border: 0;
+border: none;
+padding: 4px 6px;
+width: 265px;
+height: 18px;
+line-height: 18px;
+overflow: hidden;
+color: #333;
+vertical-align: middle;
+color: #333;
+margin-left: 2px;
+}
+#login-nala-form ul li.security_code input {
+width: 80px;
+}
+#login-nala-form ul li.input_box .error_icon {
+background: url("../images/error_icon.png") 0 -50px no-repeat;
+position: absolute;
+width: 14px;
+height: 14px;
+right: 10px;
+top: 11px;
+}
+#login-nala-form ul li.security_code img {
+position: absolute;
+top: 0;
+right: -130px;
+width: 110px;
+height: 40px;
+background: url("../img.nala.com.cn/images/loading.gif") center no-repeat;
+}
+#login-last {
+	padding-top: 5px
+}
+#login-last li {
+	padding-bottom: 25px
+}
+#login-last i.icon-user {
+	margin-right: 4px;
+	color: #999;
+	font-size: 14px
+}
+#login-last i.icon-lock {
+	margin-right: 4px;
+	color: #999;
+	font-size: 14px
+}
+#login-box.trg {
+	padding: 12px;
+	font-size: 14px;
+	margin-top: 20px
+}
+.other-login {
+	font-size: 0
+}
+.other-login a {
+	margin-top: 0;
+	vertical-align: top;
+	margin-right: 10px;
+	background: url("../images/other-login-bg.png") center no-repeat;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	overflow: hidden
+}
+.other-login a.sina {
+	background-position: 0px 0
+}
+.other-login a.qq {
+	background-position: -40px 0
+}
+.other-login a.alipay {
+	background-position: -80px 0
+}
+.other-login a.taobao {
+	background-position: -120px 0
+}
+.other-login a.baidu {
+	background-position: -160px 0
+}
+.other-login a.qihoo360 {
+	background-position: -200px 0
+}
+.other-login a:hover {
+	text-decoration: none;
+	opacity: 0.8;
+	filter: Alpha(opacity=80)
+}
+.other-form li h5 {
+	margin-top: 30px
+}
+.other-form li {
+	padding-bottom: 8px;
+	margin-bottom: 10px
+}
+.g_box {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	width: 320px;
+	height: auto;
+	box-shadow: 0px 0px 15px rgba(204, 204, 204, 0.5);
+	float: right;
+	padding: 15px 30px
+}
+#register_box h2 {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 100;
+	letter-spacing: 5px
+}
+#register_box .trig {
+	float: right;
+	font-size: 12px;
+	letter-spacing: 0px;
+	margin-top: 5px
+}
+#register_box .trig a {
+	text-decoration: underline
+}
+.register_infor {
+	margin: 15px 0;
+	width: 320px
+}
+.register_infor ul li.input_box {
+	border: 1px solid #ccc;
+	line-height: 18px;
+	padding: 6px;
+	position: relative;
+	zoom: 1
+}
+.register_infor ul li.input_box .t_text {
+	position: absolute;
+	color: #ccc;
+	left: 14px;
+	top: 10px
+}
+.register_infor ul li.input_box input {
+	border: 0;
+	border: none;
+	padding: 4px 6px;
+	width: 265px;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+	color: #333;
+	vertical-align: middle;
+	color: #333;
+	margin-left: 2px
+}
+.register_infor ul li.security_code {
+	width: 100px
+}
+.register_infor ul li.security_code input {
+	width: 80px
+}
+.register_infor ul li.security_code img {
+	position: absolute;
+	top: 0;
+	right: -130px;
+	width: 110px;
+	height: 40px;
+}
+.register_infor ul li.security_code a {
+	position: absolute;
+	color: #39f;
+	top: 10px;
+	right: -190px;
+	text-decoration: underline
+}
+.register_infor ul li.error_box, .register_infor ul li.error_box em {
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	_height: 20px;
+	_line-height: 20px;
+	color: #fe564b;
+	overflow: hidden
+}
+.register_infor ul li.input_box .error_icon {
+	background: url("../images/error_icon.png")  0 -50px no-repeat;
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	right: 10px;
+	top: 11px
+}
+.register_infor ul li.params_error {
+	border-color: #fe655c
+}
+.register_infor ul li.params_error .error_icon {
+	background-position: 0 0
+}
+.register_infor ul li.params_success .error_icon {
+	background-position: 0 -18px
+}
+.register_infor ul li.security_code a#send_security_code {
+	color: #666;
+	text-decoration: none;
+	padding: 11px 20px;
+	top: 0px;
+	font-size: 14px;
+	right: -206px;
+	display: none
+}
+.register_infor ul li.security_code a.disabled {
+	background: #ccc
+}
+.register_infor ul li.lizi_law a {
+	color: #39f
+}
+.register_infor ul li.go2register a{
+	width: 100%;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 18px
+}
+.register_infor ul li.go2register input {
+	width: 100%;
+	padding: 15px 0;
+	height:48px;
+	text-align: center;
+	font-size: 18px;
+	cursor:pointer;
+}
+.register_infor li.input_box input:-webkit-autofill {
+-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.register_infor .remember-me {
+	margin-right: 3px;
+	vertical-align: -2px;
+}
+.checkImage {
+	width: 300px
+}
+.checkImage input {
+	width: 100px;
+	padding: 5px;
+	height: 16px;
+	overflow: hidden;
+	border: 1px solid #eee;
+	border-top-color: #ccc;
+	margin: 8px 0;
+	box-shadow: 0px 1px 3px rgba(200, 200, 200, 0.3) inset;
+	color: #333;
+	vertical-align: middle
+}
+.checkImage .img {
+	padding-bottom: 20px
+}
+.checkImage .img img {
+	vertical-align: -8px;
+	margin-right: 10px;
+	width: 110px;
+	height: 40px;
+}
+.checkImage .img a {
+	color: #09f
+}
+.checkImage a.btn {
+	padding: 5px 18px;
+	font-size: 14px;
+	margin-left: 10px
+}
+.tb_box {
+	position: fixed;
+	z-index: 1000;
+	bottom: 20px;
+	left: 50%;
+	margin-left: 610px;
+	_position: absolute;
+_top:expression((document).documentElement.scrollTop+(document).documentElement.clientHeight-100)
+}
+.tb_box .tb_bd {
+	width: 84px;
+	overflow: hidden
+}
+.tb_box .tb_bd li {
+	margin-bottom: 5px;
+	height: 42px;
+	overflow: hidden
+}
+.tb_box .tb_bd li a {
+	height: 42px;
+	background-color: #fff;
+	color: #fff;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	cursor: pointer
+}
+.tb_box .tb_bd li img {
+	background: url("../images/right-fixed-ico.png") 0 -9999px no-repeat;
+	width: 25px;
+	height: 42px;
+	vertical-align: top
+}
+.tb_box .tb_bd li p {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s
+}
+.tb_box .tb_bd li p span {
+	display: block;
+	height: 42px;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 42px;
+	background-color: #f70
+}
+.tb_box .tb_bd li .kefu img {
+	background-position: 0 8px
+}
+.tb_box .tb_bd li .back2top img {
+	background-position: 0 -45px
+}
+.tb_box .tb_bd li a:hover {
+	zoom: 1;
+	text-decoration: none
+}
+.tb_box .tb_bd li a:hover p {
+	top: -42px
+}
+.is1280 .tb_box {
+	margin-left: 0;
+	left: auto;
+	right: 0
+}
+.is1280 .tb_box .tb_bd {
+	width: 36px
+}
+.is1280 .tb_box .tb_bd li p span {
+	line-height: 18px;
+	padding-top: 2px;
+	height: 40px
+}

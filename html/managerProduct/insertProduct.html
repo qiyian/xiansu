@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建商品</title>
+    <script src="../../js/jquery-3.1.0.js"></script>
+    <style>
+    	.main{width:240px;height:200px;background:skyblue;margin:50px auto;border-radius:50px;padding:250px 280px;}
+    	input{
+    		width:150px;
+    	}
+    </style>
+</head>
+<body>
+<div>
+	<div class="main">
+	 	商品号&nbsp;&nbsp;<input type="text" id="txtid" placeholder="id"/><br/><br/>
+	        商品名称&nbsp;<input type="text" id="txtname" placeholder="name"/><br/><br/>
+	        商品价格&nbsp;<input type="text" id="txtprice" placeholder="price"/><br/><br/>
+	        商品图片&nbsp;<input type="text" id="txtimgsrc" placeholder="img"/><br/><br/>
+	    <input type="button" id="bt1" value="添加"/>
+    </div>
+    <script>
+        $("#bt1").click(function(){
+            var pName=$("#txtname").val();
+            var pId=$("#txtid").val();
+            var pPrice=$("#txtprice").val();
+            var pImgsrc=$("#txtimgsrc").val();
+
+            var dataJsonOb={
+                "id":pId,
+                "name":pName,
+                "price":pPrice,
+                "imgSrc":pImgsrc
+            }
+            var dataJsonStr=JSON.stringify(dataJsonOb);
+            $.ajax({
+                url:"http://localhost:8080/product/CreateUpdateProduct_post",
+                data:{
+                    "id":pId,
+                    "datajson":dataJsonStr
+                },
+                success:function(data){
+                    if(data==1){
+                        alert("创建成功");
+                    }else{
+                        alert("创建失败");
+                    }
+                },
+                error:function(){
+                    alert("ajax error");
+                },
+                dataType:"json",
+                type:"post"
+            })
+        });
+    </script>
+</div>
+</body>
+</html>

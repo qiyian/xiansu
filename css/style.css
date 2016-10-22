@@ -1,0 +1,154 @@
+
+.main_cata {
+	width: 214px;
+	height: auto;
+	opacity: 0;
+	display: none;
+	filter: Alpha(opacity=0);
+	position: absolute;
+	left: 0;
+	top: 35px;
+	z-index: 1999;
+	padding-bottom: 10px
+}
+.main_cata ul {
+	width: 214px;
+	overflow: hidden;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	box-shadow: -2px 4px 4px rgba(200, 200, 200, 0.3)
+}
+.main_cata li {
+	border: 1px solid #ccc;
+	width: 212px;
+	border-bottom: none;
+	overflow: hidden;
+	font-size: 0
+}
+.main_cata li a {
+	font-size: 12px
+}
+.main_cata li h3 {
+	padding: 6px 6px 4px;
+	font-weight: bold
+}
+.main_cata li h3 a {
+	font-size: 14px
+}
+.main_cata li .bd {
+	padding: 0 0 6px 14px;
+	margin-right: -10px;
+	height:43px;
+	overflow:hidden;
+}
+.main_cata li .bd a {
+	color: #999;
+	display: inline-block;
+	margin-right: 14px;
+	line-height: 22px
+}
+.main_cata li.first {
+	border-top: none
+}
+.main_cata li.last {
+	padding: 0;
+	box-shadow: 0 4px 3px rgba(200, 200, 200, 0.3)
+}
+.main_cata li.last a {
+	display: inline-block;
+	width: 48%;
+	height: 54px;
+	text-align: center;
+	line-height: 54px;
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 14px
+}
+.main_cata li.last a.no2 {
+	border-left: 1px solid #ccc
+}
+.main_cata li.current {
+	background-color: #eee;
+	border-right-color: #eee;
+	box-shadow: 0 0 10px #eee
+}
+.main_cata li.current h3 a, .main_cata li.current a:hover {
+	color: #492669
+}
+.J_subCata {
+	position: absolute;
+	top: 35px;
+	left: 100px;
+	opacity: 0;
+	filter: Alpha(opacity=0);
+	z-index: 1998;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease
+}
+.J_subCata .J_subView {
+	border: 1px solid #ccc;
+	width: 810px;
+	min-height: 228px;
+	padding-top: 5px;
+	overflow: hidden;
+	background-color: #eee;
+	position: relative;
+	box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+	display: none
+}
+.J_subCata .J_subView dl {
+	padding: 0 12px 12px
+}
+.J_subCata .J_subView dt {
+	font-size: 14px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 4px;
++zoom: 1
+}
+.J_subCata .J_subView dd {
+	padding-top: 5px;
+	margin-right: -15px
+}
+.J_subCata .J_subView dd a {
+	display: inline-block;
+	margin-right: 14px;
+	color: #999;
+	line-height: 22px
+}
+.J_subCata .J_subView dd.kuan_cata a {
+	margin-right: 30px
+}
+.J_subCata .J_subView dd.brand_cata {
+	font-size: 0
+}
+.J_subCata .J_subView dd.brand_cata a {
+	display: inline-block;
+	width: 64px;
+	height: 42px;
+	border: 1px solid #ccc;
+	text-align: center;
+	margin: 0 13px 8px 0;
+	overflow: hidden;
+	background-color: #fff
+}
+.J_subCata .J_subView dd.brand_cata a img {
+	width: 64px;
+	height: 42px;
+	vertical-align: top
+}
+.J_subCata .J_subView dd a:hover {
+	color: #492669;
+	border-color: #492669
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>用户中心_鲜宿Freshome - 全球原产地进口水果-官方商城</title>
+	
+	<link rel="shortcut icon" href="logo.ico" />
+	
+	<link href="../css/login.css" rel="stylesheet" type="text/css" />
+	<link href="../css/public.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+	
+	<script src="../js/jquery-3.1.0.js"></script>
+	<!--<script src="../js/login-register.js"></script>-->
+	<!--<script src="../js/register.js"></script>-->
+	
+	
+	
+	<style type="text/css">
+        .pop{position:absolute;left:60%;top:40%;width:280px;height:120px;background:#eee;border:1px solid #ccc} 
+        .pop_head{position:relative;height:24px;background:#ddd} 
+        .pop_head a{position:absolute;right:8px;line-height:24px;color:#000;text-decoration:none} 
+        .pop_head a:hover{color:#f60;text-decoration:none} 
+        .pop_body{padding:10px}
+    </style>
+	
+</head>
+<body>
+	
+	<script>
+		$(function(){
+			$(".input_box").click(function(){
+				$(this).find(".t_text").hide();	
+				$(this).find("input").focus();
+			})
+			
+			$(".input_box").focusin(function(){
+				$(this).find(".t_text").hide();
+			})
+		
+			$(".input_box").focusout(function(){
+				if($(this).find("input").val() == "")
+				{
+					$(this).find(".t_text").show();
+				}
+			})	
+		})
+	</script>
+	
+	
+	
+	
+	<div id="header">
+		<div class="hd_bar" id="userinfo-bar">
+	        <div class="bd">
+	            <div class="logo">
+	            	<a href="index.html"></a>
+	            </div>
+	       		<div class="hd_lbar" style="display: block;">
+	                <a href="../index.html">鲜宿首页</a>
+	           </div>  
+	        </div>
+	    </div>
+	</div>
+	
+	
+	
+	<div id="main" class="cle">
+		<div class="box-pic" id="login-pic">
+    		<div class="img">
+    			<img src="../images/reg-box-bg.jpg" width="500" height="450">
+    		</div>
+		</div>
+		<div class="g_box">
+			<div id="register_box">
+				<form>
+					
+        			<h2>
+    					<div class="trig">已有账号?
+    						<a href="user_login.html" class="trigger-box">点击登录</a>
+    					</div>注册
+    				</h2>
+    				<div class="register_infor">
+    					<ul>
+    						<li class="input_box">
+    							<span class="t_text">用户名</span>
+    							<input type="text" name="username" id="username">
+    							<!--<span class="error_icon"></span>-->
+    						</li>
+    						<!--<li class="error_box" id="username_notice"><em></em></li>-->
+    						<!--<li class="input_box">
+    							<span class="t_text">email</span>
+    							<input name="email" type="text" id="email">
+    							<span class="error_icon"></span>
+    						</li>
+    						<li class="error_box" id="email_notice"><em></em></li>-->
+    						<li class="input_box">
+    							<span class="t_text">密码</span>
+    							<input type="password" name="password" id="password1">
+    							<!--<span class="error_icon"></span>-->
+    						</li>
+    						<!--<li class="error_box" id="password_notice"><em></em></li>-->
+        					<li class="input_box">
+        						<span class="t_text">确认密码</span>
+          						<input name="confirm_password" type="password" id="conform_password" >
+          						<!--<span class="error_icon"></span>-->
+        					</li>
+        					<!--<li class="error_box" id="conform_password_notice"><em></em></li>-->
+        					
+        					<!--<li class="lizi_law">
+        						<label>
+        							<input name="agreement" type="checkbox" value="1" checked="checked"  tabindex="5" class="remember-me"/>
+        							我已看过并接受《
+        							<a href="javascript:;" style="color:blue" target="_blank">用户协议</a>》
+        						</label>
+        					</li>-->
+        					<!--<li class="error_box"><em></em></li>-->
+        					<li class="go2register">
+        						<input name="act" type="hidden" value="act_register" >
+      							<input name="Submit" type="submit" value="注册" class="btn submit_btn" id="register">
+      						</li>
+      					</ul>
+    				</div>
+  				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script type="text/javascript">
+		$("#register").click(function() {
+			var username = $("#username").val();
+			var passwords = $("#password1").val();
+			
+			if(passwords != "") {
+				var js = document.createElement("script");
+				js.src = "http://localhost:8080/user/registerGet?name=" + username + "&password=" + passwords + "&callback=fn";
+				document.body.appendChild(js);
+				fn = function(result) {
+					if(result == 1) {
+						alert("注册成功");
+						window.location.href = "http://localhost:8080/httpview/xiansu/index.html";
+					} else {
+						alert("注册失败");
+					}
+				}
+				document.body.removeChild(js);
+			}
+		})
+	</script>
+	
+	
+	
+	
+	<div id="footer">
+		<div class="ft-bg">
+			<div class="ft_main">
+				<div class="ft_link">
+					<div class="ft_nav">
+						<a href="javascript:;" class="noborder">免责条款</a>
+						<a href="javascript:;">隐私保护</a>
+						<a href="javascript:;" >咨询热点</a>
+						<a href="javascript:;">联系我们</a>
+						<a href="javascript:;" >公司简介</a> 
+	       				<a href="javascript:;" >批发方案</a>
+	       				<a href="javascript:;"  >配送方式</a> 
+	       			</div>
+	    			<div class="img_links">
+	    				<a class="no1" href="javascript:;" target="_blank"></a>
+	    				<a class="no2" href="javascript:;" target="_blank"></a>
+	    			</div>
+	  			</div>
+	  			<div class="ft_txt">
+	    			<p>&copy; 2005-2016 鲜宿Freshome 版权所有，并保留所有权利。<br/><br/>ICP备案证书号：
+	    				<a href="javascript:;"  target="_blank">京ICP备15024132号-1</a>
+	    			</p>
+	    			<p class="ft_contact">
+	    				<span>服务时间：09:00-23:00</span>
+	    				<span class="ft_phone">客服热线: <em>4000-1000-44</em></span> 
+	      			</p>
+	      			
+	      			<script type="text/javascript">
+	      			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	      			document.write(unescape("%3Cspan id='cnzz_stat_icon_1255203662'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1255203662%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+	      			</script>
+	      			
+	      			<p class="link"> 友情链接：
+	      				<a href="javascript:;"  target="_blank" title="鲜宿企业官网">鲜宿企业官网</a>
+	      			</p>
+	      			<p class="beian-logos">
+	      				<a href="javascript:void(0);" target="_blank">
+	      					<img alt="鲜宿Freshome获得电商金典奖" src="../images/flogo-jindian.png" >
+	      				</a>
+	  					<a href="javascript:void(0);" target="_blank">
+	  						<img alt="中国人保为鲜宿Freshome承保" src="../images/flogo-picc.png" >
+						</a>
+						<a href="javascript:void(0);" target="_blank">
+							<img alt="互联网协会A级信用认证" src="../images/flogo-xinyong.png" >
+						</a>
+						<a href="javascript:void(0);" target="_blank">
+							<img alt="鲜宿Freshome可信网站权威认证" src="../images/flogo-kexin.png"  class="no-border">
+						</a>
+					</p>
+	  			</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="tb_box" id="J_toolbar">
+		<ul class="tb_bd">
+			<li>
+				<a href="javascript:;"  class="kefu" target="_blank">
+	  				<p><img src="../images/kong.gif" ><span>在线客服</span></p>
+	  			</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="back2top">
+	  				<p><img src="../images/kong.gif"><span>返回顶部</span></p>
+	  			</a>
+			</li>
+		</ul>
+	</div>
+	
+	
+</body>
+</html>

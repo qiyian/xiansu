@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>删除商品</title>
+   <script src="../../js/jquery-3.1.0.js" type="text/javascript" charset="utf-8"></script>
+   <style>
+   	.main{width:300px;height:200px;background:skyblue;margin:50px auto;border-radius:50px;padding:250px 250px;}
+   </style>
+</head>
+<body>
+<div>
+	<div class="main">
+    	商品ID&nbsp;<input type="text" id="txtid"/>
+   
+    	<input type="button" id="bt1" value="删除"/>
+	</div>
+    <script>
+        function UrlSearch()
+        {
+            var name,value;
+            var str=location.href; //取得地址栏的url
+            var num=str.indexOf("?");  //？ 的位置
+            str=str.substr(num+1); //取得所有参数  获取？后面的url内容。
+            var arr=str.split("&"); //各个参数放到数组里  ["pid=1"]
+            for(var i=0;i < arr.length;i++){
+                num=arr[i].indexOf("=");
+                if(num>0){
+                    name=arr[i].substring(0,num);
+                    value=arr[i].substr(num+1);
+                    this[name]=value;
+                }
+            }
+        }
+        var request=new UrlSearch(); //实例化
+        var pid=request.id;
+        $.ajax({
+            url:"http://localhost:8080/product/GetProductById_get?id="+pid,
+            success:function(data){ //data  { id:101,Data:"string json"}
+                var dataJsonOB=JSON.parse(data.Data);
+                $("#txtid").val(dataJsonOB.id);
+             
+            },
+            dataType:"json"
+        });
+
+        $("#bt1").click(function(){
+          
+            var pId=$("#txtid").val();
+          
+            var dataJsonOb={
+                "id":pId
+            }
+            var dataJsonStr=JSON.stringify(dataJsonOb);
+            $.ajax({
+                url:"http://localhost:8080/product/DeleteProductById_post",
+                data:{
+                    "id":pId,
+                    "datajson":dataJsonStr
+                },
+                success:function(data){
+                    if(data==1){
+                        alert("删除成功");
+                    }else{
+                        alert("删除失败");
+                    }
+                },
+                error:function(){
+                    alert("ajax error");
+                },
+                dataType:"json",
+                type:"post"
+            })
+        });
+    </script>
+</div>
+</body>
+<ml>

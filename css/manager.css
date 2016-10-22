@@ -1,0 +1,504 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body,
+p,
+ul,
+ol,
+li,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+fieldset,
+legend {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 12px "微软雅黑";
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+	font-weight: normal;
+}
+
+em,
+i {
+	font-style: normal;
+}
+
+.logo {
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	background: #7ab5e9 url(../images/manager/left_04.jpg) repeat-x center bottom;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.logo_l {
+	height: 80px;
+	width: 400px;
+	margin-top: 10px;
+	margin-left: 30px;
+	float: left;
+}
+
+.logo_r {
+	float: right;
+}
+
+.logo_rt {
+	height: 21px;
+	width: 237px;
+	background: #fff;
+	margin-left: 344px;
+	border-bottom: 1px solid #e3e2e2;
+}
+
+.logo_rt li {
+	float: left;
+}
+
+.logo_rt .li1 a {
+	display: block;
+	height: 21px;
+	width: 130px;
+	color: #6d6d6d;
+	text-align: center;
+}
+
+.logo_rt .li2 a {
+	display: block;
+	height: 21px;
+	width: 50px;
+	color: #551a8b;
+	text-align: right;
+}
+
+.logo_rt .lil {
+	display: block;
+	width: 9px;
+	background: url(../images/manager/head-l.jpg) no-repeat left center;
+	margin-left: -9px;
+	height: 22px;
+	float: left;
+	text-align: center;
+}
+
+.logo_rt .lir {
+	display: block;
+	width: 9px;
+	background: url(../images/manager/head-r.jpg) no-repeat right center;
+	height: 22px;
+	float: left;
+	margin-left: 237px;
+	margin-top: -23px;
+}
+
+.logo_rt .li1 span {
+	display: block;
+	width: 151px;
+	color: #6d6d6d;
+	background: url(../images/manager/bg.png) no-repeat left center;
+	background-position: 0 -90px;
+	height: 22px;
+	margin-top: -20px;
+}
+
+.logo_rt .li2 span {
+	display: block;
+	color: #551a8b;
+	background: url(../images/manager/bg.png) no-repeat left center;
+	background-position: 0 -378px;
+	width: 30px;
+	height: 22px;
+	margin-top: -20px;
+}
+
+.logo_rb {
+	width: 700px;
+	height: 56px;
+	margin-top: 21px;
+}
+
+.logo_rb li {
+	width: 87px;
+	height: 56px;
+	float: left;
+	text-align: center;
+}
+
+.logo_rb li a {
+	color: #fff;
+	display: block;
+	height: 56px;
+	width: 95px;
+	line-height: 78px;
+}
+
+.logo_rb li span {
+	display: block;
+	height: 26px;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li1 span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: 0 0;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li2 span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -270px 0;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li3 span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -360px 0;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li4 span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -90px 0;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li5 span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -450px 0;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li6 span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -540px 0;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li7 span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -180px 0;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb li a:hover {
+	background: url(../images/manager/libj.png) no-repeat;
+}
+
+.logo_rb .li1 a:hover span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: 0 -30px;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li2 a:hover span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -270px -30px;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li3 a:hover span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -360px -30px;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li4 a:hover span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -90px -30px;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li5 a:hover span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -450px -30px;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li6 a:hover span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -540px -30px;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.logo_rb .li7 a:hover span {
+	display: block;
+	width: 26px;
+	height: 24px;
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: -180px -30px;
+	margin: 0 auto;
+	position: relative;
+	top: -72px;
+}
+
+.main {
+	width: 100%;
+	position: absolute;
+	top: 100px;
+	bottom: 0;
+	background: url(../images/manager/left_02_bj.jpg) repeat-x left top;
+	padding-top: 2px;
+}
+
+.main_l {
+	width: 209px;
+	height: 100%;
+	background: url(../images/manager/bj.gif);
+	float: left;
+}
+
+.main_l li {
+	width: 197px;
+	height: 36px;
+}
+
+.main_l li span {
+	width: 197px;
+	height: 30px;
+	display: block;
+}
+
+.main_l li a {
+	display: block;
+	text-align: center;
+	line-height: 36px;
+}
+
+.main_l .li8 {
+	background: url(../images/manager/e_01.jpg) no-repeat;
+}
+
+.main_l .li9 {
+	background: url(../images/manager/left_hover.jpg) no-repeat;
+}
+
+.main_l .li9 a {
+	color: #000;
+}
+
+.main_l .li9 span {
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: 0 -120px;
+	margin-top: -25px;
+	margin-left: 14px;
+}
+
+.main_l .li10 {
+	background: url(../images/manager/jiao.png) no-repeat 60px center;
+}
+
+.main_l .li10 a {
+	color: #b9ddff;
+}
+
+.main_l .li11 {
+	background: url(../images/manager/left_04.jpg) no-repeat center top;
+}
+
+.main_l .li11 a {
+	color: #fff;
+}
+
+.main_l .li11 span {
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: 0 -150px;
+	margin-top: -25px;
+	margin-left: 14px;
+}
+
+.main_l .li12 {
+	background: url(../images/manager/left_04.jpg) no-repeat center top;
+}
+
+.main_l .li12 a {
+	color: #fff;
+}
+
+.main_l .li12 span {
+	background: url(../images/manager/bg.png) no-repeat;
+	background-position: 0 -180px;
+	margin-top: -25px;
+	margin-left: 14px;
+}
+
+.main_r {
+	overflow: hidden;
+	height: 100%;
+}
+
+.main_r .navspan a {
+	position: absolute;
+	top: 300px;
+	left: 198px;
+	z-index: 10;
+	height: 41px;
+	width: 9px;
+	background: url(../images/manager/nav.png) no-repeat left center;
+}
+
+.main_r .rtul {
+	width: 100%;
+	height: 24px;
+	margin-left: 22px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.rtul .rtli1 span {
+	display: block;
+	width: 5px;
+	height: 7px;
+	background: url(../images/manager/home.jpg) no-repeat left center;
+	position: relative;
+	left: -10px;
+	top: -15px;
+}
+
+.rtul li {
+	float: left;
+	line-height: 24px;
+	padding: 0 2px;
+}
+
+.rtul li a {
+	color: #636363;
+}
+
+.main_rc span {
+	display: block;
+	width: 64px;
+	height: 23px;
+	background: url(../images/manager/seacth.jpg) no-repeat left center;
+	text-align: right;
+	margin-left: 10px;
+	margin-top: 15px;
+	line-height: 24px;
+	font-size: 12px;
+}
+
+.main_rc form {
+	margin-top: 7px;
+	float: left;
+	border: 0;
+}
+
+.main_rc form {
+	margin-top: -26px;
+	border: 0;
+	margin-left: 100px;
+}
+
+.txt {
+	width: 120px;
+	height: 24px;
+	line-height: 24px;
+	margin-right: 18px;
+}
+
+.btn {
+	width: 56px;
+	height: 22px;
+	background: url(../images/manager/cx.jpg) repeat-x;
+	border: 1px solid #bebebe;
+	color: #000;
+	margin-left: 23px;
+}

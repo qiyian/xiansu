@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+    <script src="../../js/jquery-3.1.0.js"></script>
+    <style>
+    	#tb1{border-collapse: collapse;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+    	#tb1 td{border:1px solid lightblue;width:150px;height:50px;text-align:center;}
+    	a{color:green;text-decoration: none;}
+    	a:hover{text-decoration:underline;}
+    	img{width:70px;height:70px;}
+    </style>
+</head>
+<body>
+	<table id="tb1">
+		<th>商品号</th>
+		<th>商品名称</th>
+		<th>商品价格</th>
+		<th>商品图片</th>
+		<th>编辑商品</th>
+	</table>
+<script>
+		
+    var pageSizeV =50;
+    var pageIndexV=1;
+    //ajax 获取数据 load
+    $(function(){
+        $.ajax({
+            url:"http://localhost:8080/product/GetProductsByPage_get",
+            data:{	
+                "pagesize":pageSizeV,
+                "pageindex":pageIndexV
+            },
+            success:function(data){
+                //data  array
+                for(var i=0;i<data.length;i++){
+                    //把data 里面的string 主动转成对象；
+                    var dataObj=JSON.parse(data[i].Data);
+                    var trOb=$("<tr><td>"+dataObj.id+"</td><td>"+dataObj.name+"</td><td>"+dataObj.price+"</td><td><img src=\""+dataObj.imgSrc+"\"/></td><td><a href='updateProduct.html?id="+dataObj.id+"'>更新商品</a>"+"</td><td><a href='deleteProduct.html?id="+dataObj.id+"'>删除商品</a></td></tr>");
+                    $("#tb1").append(trOb);
+                }
+            },
+            dataType:"json"
+        })
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>添加用户</title>
+	
+	<style>
+        *{margin:0;padding:0;}
+        div{margin:400px 500px;}
+        form{width:300px;height:200px;background:skyblue;margin:50px auto;border-radius:50px;padding:250px 250px;}
+        input{height:30px;width:200px;margin:5px;color:#666;}
+        #register,#reset{height:25px;width:50px;color:#000;}
+        #register{margin:10px 40px 0 60px;}
+    </style>
+	
+</head>
+<body>
+	<form>
+		用户名<input type="text" id="username" placeholder="请输入用户名"/><br/>
+		密&nbsp;码<input type="text" id="password" placeholder="请输入密码"/><br/>
+		<input type="button" id="register" value="添加"/>
+		<input type="reset" id="reset" value="重置"/>
+	</form>
+	
+	<script>
+	    var oUserName=document.getElementById("username");
+	    var oPassWord=document.getElementById("password");
+	    var oRegister=document.getElementById("register");
+	
+	    oUserName.onblur=function(){
+	        var nameValue=this.value;
+	        if(nameValue){
+		        var xhr=new XMLHttpRequest();
+		        xhr.onreadystatechange=function(){
+		            if(xhr.readyState==4){
+		                if(xhr.status==200){
+		                    var result=eval("("+xhr.responseText+")");
+		                    if(result==1){
+		                        alert("用户已存在")
+		                    }else{
+		                        alert("用户可用");
+		                    }
+		                }
+		            }
+		        }
+		        xhr.open("get","http://localhost:8080/user/CheckUserNameGet?username=" +nameValue);
+	        	xhr.send();
+	        }
+	    }
+	
+	    oRegister.onclick=function () {
+	        var nameNew=oUserName.value;
+	        var passwordNew=oPassWord.value;
+	        var xhr=new XMLHttpRequest();
+	        xhr.onreadystatechange=function(){
+	            if(xhr.readyState==4){
+	                if(xhr.status==200){
+	                    var result=eval("("+xhr.responseText+")");
+	                    if(result==1){
+	                        alert("添加成功");
+	                    }else{
+	                        alert("添加失败");
+	                    }
+	                }else{
+	                    console.log("获取数据失败");
+	                }
+	            }
+	        }
+	        xhr.open("post","http://localhost:8080/user/register?name="+nameNew+"&password="+passwordNew,true);
+	        xhr.send();
+	    }
+    </script>
+</body>
+</html>
