@@ -8,7 +8,11 @@
 
 	git clone git@github.com:qiyian/xiansu.git
 
-### 页面结构
+### 运行项目
+	
+	页面中的数据是动态加载过去的，首先打开服务器（什么服务器都可以）、在浏览器中输入localhost:80(端口号是自己起服务的端口号).index.html
+
+### 项目展示
 
 #### 首页
 
