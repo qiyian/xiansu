@@ -41,5 +41,7 @@
 ![](http://i.imgur.com/l8gAPVQ.png)
 
 #### 后台管理系统
+
+	页面使用Bootstrap+AngularJs构建。服务器使用Express+Mysql基于Node.JS实现。
 	
-	待更新...
+	页面效果待更新...
